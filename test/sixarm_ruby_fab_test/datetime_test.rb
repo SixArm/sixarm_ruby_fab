@@ -1,0 +1,66 @@
+# -*- coding: utf-8 -*-
+require 'minitest/autorun'
+require 'simplecov'
+SimpleCov.start
+
+describe Fab do
+
+  let(:fab){ Fab.new }
+
+  describe "#datetime" do    
+
+    before do
+      @x = fab.datetime
+    end
+
+    it "is a datetime" do
+      @x.must_be_kind_of DateTime
+    end
+  end
+
+  describe "#start_datetime" do    
+
+    before do
+      @x = fab.start_datetime
+    end
+
+    it "is a datetime" do
+      @x.must_be_kind_of DateTime
+    end
+
+  end
+
+  describe "#stop_datetime" do    
+
+    before do
+      @x = fab.stop_datetime
+    end
+
+    it "is a datetime" do
+      @x.must_be_kind_of DateTime
+    end
+
+  end
+
+  describe "#start_datetime_and_stop_datetime" do    
+
+    before do
+      @start, @stop = @x = fab.start_datetime_and_stop_datetime
+    end
+
+    it "is an array" do
+      @x.must_be_kind_of Array
+    end
+
+    it "contains a start datetime and stop datetime" do
+      @start.must_be_kind_of DateTime
+      @stop.must_be_kind_of DateTime
+    end
+
+    it "ensures start <= stop" do
+      @start.must_be :<=, @stop
+    end
+
+  end
+
+end
