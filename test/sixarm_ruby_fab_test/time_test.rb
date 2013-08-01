@@ -19,6 +19,56 @@ describe Fab do
 
   end
 
+  describe "#time_min" do    
+
+    before do
+      @x = fab.time_min
+    end
+
+    it "returns a time" do
+      @x.must_be_kind_of Time
+    end
+
+  end
+
+  describe "#time_min=" do    
+
+    before do
+      @x = Time.now
+    end
+
+    it "sets & gets" do
+      fab.time_min = @x
+      fab.time_min.must_equal @x
+    end
+
+  end
+
+  describe "#time_max" do    
+
+    before do
+      @x = fab.time_max
+    end
+
+    it "returns a time" do
+      @x.must_be_kind_of Time
+    end
+
+  end
+
+  describe "#time_max=" do    
+
+    before do
+      @x = Time.now
+    end
+
+    it "sets & gets" do
+      fab.time_max = @x
+      fab.time_max.must_equal @x
+    end
+
+  end
+
   describe "#start_time" do    
 
     before do

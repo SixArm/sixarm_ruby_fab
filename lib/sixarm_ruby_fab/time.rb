@@ -4,13 +4,33 @@ class Fab
   #
   # Options:
   #
-  #   * min: now - 1000 
-  #   * max: now + 1000
+  #   * min
+  #   * max
   #
   # @returns [Time] a random time min..max
   #
   def time(options = {})
-    rand((options[:min] || Time.now - 1000)..(options[:max] || Time.now + 1000))
+    rand((options[:min] || time_min)..(options[:max] || time_max))
+  end
+
+  # Get. The default is now - 1000.
+  def time_min
+    @time_min ||= Time.now - 1000
+  end
+
+  # Set.
+  def time_min=x
+    @time_min=x
+  end
+
+  # Get. The default is now + 1000.
+  def time_max
+    @time_max ||= Time.now + 1000
+  end
+
+  # Set.
+  def time_max=x
+    @time_max=x
   end
 
   # Fab a random start time.

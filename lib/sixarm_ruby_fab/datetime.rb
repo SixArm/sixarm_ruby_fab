@@ -1,5 +1,5 @@
 class Fab
-  
+
   # Fab a random datetime.
   #
   # Options:
@@ -10,9 +10,29 @@ class Fab
   # @returns [DateTime] a random datetime min..max
   #
   def datetime(options = {})
-    rand((options[:min] || DateTime.now - 1000)..(options[:max] || DateTime.now + 1000))
+    rand((options[:min] || datetime_min)..(options[:max] || datetime_max))
   end
 
+  # Get. The default is now - 1000.
+  def datetime_min
+    @datetime_min ||= DateTime.now - 1000
+  end
+
+  # Set.
+  def datetime_min=x
+    @datetime_min=x
+  end
+
+  # Get. The default is now + 1000.
+  def datetime_max
+    @datetime_max ||= DateTime.now + 1000
+  end
+  
+  # Set.
+  def datetime_max=x
+    @datetime_max=x
+  end
+  
   # Fab a random start datetime.
   # Delegates to #datetime.
   #

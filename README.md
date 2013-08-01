@@ -24,7 +24,7 @@ Install:
 
 Bundler:
 
-    gem "sixarm_ruby_fab", "~>1.0.0"	
+    gem "sixarm_ruby_fab", "~>1.0.1"
 
 Require:
 
@@ -59,6 +59,7 @@ Use it:
 
 ## Changes
 
+* 2013-08-02 1.0.1 Add min & max to date, datetime, time.
 * 2013-08-01 1.0.0 Publish.
 
 

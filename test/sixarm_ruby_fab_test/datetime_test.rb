@@ -18,6 +18,56 @@ describe Fab do
     end
   end
 
+  describe "#datetime_min" do    
+
+    before do
+      @x = fab.datetime_min
+    end
+
+    it "returns a datetime" do
+      @x.must_be_kind_of DateTime
+    end
+
+  end
+
+  describe "#datetime_min=" do    
+
+    before do
+      @x = DateTime.now
+    end
+
+    it "sets & gets" do
+      fab.datetime_min = @x
+      fab.datetime_min.must_equal @x
+    end
+
+  end
+
+  describe "#datetime_max" do    
+
+    before do
+      @x = fab.datetime_max
+    end
+
+    it "returns a datetime" do
+      @x.must_be_kind_of DateTime
+    end
+
+  end
+
+  describe "#datetime_max=" do    
+
+    before do
+      @x = DateTime.now
+    end
+
+    it "sets & gets" do
+      fab.datetime_max = @x
+      fab.datetime_max.must_equal @x
+    end
+
+  end
+
   describe "#start_datetime" do    
 
     before do

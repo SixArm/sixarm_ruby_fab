@@ -10,9 +10,29 @@ class Fab
   # @returns [Date] a random date min..max
   #
   def date(options = {})
-    rand((options[:min] || Date.today - 1000)..(options[:max] || Date.today + 1000))
+    rand((options[:min] || date_min)..(options[:max] || date_max))
   end
 
+  # Get. The default is today - 1000.
+  def date_min
+    @date_min ||= Date.today - 1000
+  end
+
+  # Set.
+  def date_min=x
+    @date_min=x
+  end
+
+  # Get. The default is today + 1000.
+  def date_max
+    @date_max ||= Date.today + 1000
+  end
+
+  # Set.
+  def date_max=x
+    @date_max=x
+  end
+  
   # Fab a random start date.
   # Delegates to #date.
   #
