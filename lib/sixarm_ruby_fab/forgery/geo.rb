@@ -1,4 +1,4 @@
-require 'forgery'
+require "forgery"
 
 # Generates random geographic information.
 class Forgery::Geo < Forgery

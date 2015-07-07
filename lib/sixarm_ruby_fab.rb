@@ -3,11 +3,11 @@
 Please see README
 =end
 
-require 'pathname'
-require 'securerandom'
-require 'forgery'  # gem
-require 'sixarm_ruby_fab/forgery/geo'
-require 'sixarm_ruby_fab/forgery/uri'
+require "pathname"
+require "securerandom"
+require "forgery"  # gem
+require "sixarm_ruby_fab/forgery/geo"
+require "sixarm_ruby_fab/forgery/uri"
 
 class Fab
   AZ = ('a'..'z').to_a

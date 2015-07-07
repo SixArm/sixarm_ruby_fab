@@ -1,4 +1,4 @@
-require 'forgery'
+require "forgery"
 # Generates random Interet URI information.
 class Forgery::Internet < Forgery
 
