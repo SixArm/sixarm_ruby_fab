@@ -2,54 +2,82 @@
 
 Gem::Specification.new do |s|
 
-  SOURCES = [
-    'agent',
-    'basic',
-    'company',
-    'date',
-    'datetime',
-    'email',
-    'files',
-    'geo',
-    'id',
-    'internet',
-    'locale',
-    'mime',
-    'names',
-    'password',
-    'phone',
-    'postal',
-    'text',
-    'time',
-    'twitter',
-    'username',
-    'uuid',
-    'forgery/geo',
-    'forgery/uri'
-  ]
-
   s.name           = "sixarm_ruby_fab"
   s.summary        = "SixArm.com » Ruby » Fab gem to fabricate sample data for testing"
   s.description    = "Generate sample names, places, agents, tweets, etc."
-  s.version        = "1.0.1"
+  s.version        = "1.0.2"
+
   s.author         = "SixArm"
   s.email          = "sixarm@sixarm.com"
   s.homepage       = "http://sixarm.com/"
   s.licenses       = ["BSD", "GPL", "MIT", "PAL", "Various"]
-  s.signing_key    = "/opt/keys/sixarm/sixarm-rsa-4096-x509-20145314-private.pem"
+
+  s.signing_key    = "/opt/keys/sixarm/sixarm-rsa-4096-x509-20150314-private.pem"
   s.cert_chain     = ["/opt/keys/sixarm/sixarm-rsa-4096-x509-20150314-public.pem"]
 
   s.platform       = Gem::Platform::RUBY
   s.require_path   = "lib"
   s.has_rdoc       = true
 
-  top_files        = [".gemtest", "CONTRIBUTING.md", "Rakefile", "README.md", "VERSION"]
-  lib_files        = ["lib/#{s.name}.rb"] + SOURCES.map{|x| "lib/#{s.name}/#{x}.rb"}
-  test_files       = ["test/#{s.name}_test.rb"] + SOURCES.map{|x| "test/#{s.name}_test/#{x}_test.rb"}
+  s.files = [
+    ".gemtest",
+    "CONTRIBUTING.md",
+    "Rakefile",
+    "README.md",
+    "VERSION",
+    "lib/sixarm_ruby_fab.rb",
+    "lib/sixarm_ruby_fab/agent.rb",
+    "lib/sixarm_ruby_fab/basic.rb",
+    "lib/sixarm_ruby_fab/company.rb",
+    "lib/sixarm_ruby_fab/date.rb",
+    "lib/sixarm_ruby_fab/datetime.rb",
+    "lib/sixarm_ruby_fab/email.rb",
+    "lib/sixarm_ruby_fab/files.rb",
+    "lib/sixarm_ruby_fab/geo.rb",
+    "lib/sixarm_ruby_fab/id.rb",
+    "lib/sixarm_ruby_fab/internet.rb",
+    "lib/sixarm_ruby_fab/locale.rb",
+    "lib/sixarm_ruby_fab/mime.rb",
+    "lib/sixarm_ruby_fab/names.rb",
+    "lib/sixarm_ruby_fab/password.rb",
+    "lib/sixarm_ruby_fab/phone.rb",
+    "lib/sixarm_ruby_fab/postal.rb",
+    "lib/sixarm_ruby_fab/text.rb",
+    "lib/sixarm_ruby_fab/time.rb",
+    "lib/sixarm_ruby_fab/twitter.rb",
+    "lib/sixarm_ruby_fab/username.rb",
+    "lib/sixarm_ruby_fab/uuid.rb",
+    "lib/sixarm_ruby_fab/forgery/geo.rb",
+    "lib/sixarm_ruby_fab/forgery/uri.rb",
+  ]
 
-  s.files          = top_files + lib_files + test_files
-  s.test_files     = test_files
+  s.test_files = [
+    "test/sixarm_ruby_fab_test.rb",
+    "test/sixarm_ruby_fab_test/agent_test.rb",
+    "test/sixarm_ruby_fab_test/basic_test.rb",
+    "test/sixarm_ruby_fab_test/company_test.rb",
+    "test/sixarm_ruby_fab_test/date_test.rb",
+    "test/sixarm_ruby_fab_test/datetime_test.rb",
+    "test/sixarm_ruby_fab_test/email_test.rb",
+    "test/sixarm_ruby_fab_test/files_test.rb",
+    "test/sixarm_ruby_fab_test/geo_test.rb",
+    "test/sixarm_ruby_fab_test/id_test.rb",
+    "test/sixarm_ruby_fab_test/internet_test.rb",
+    "test/sixarm_ruby_fab_test/locale_test.rb",
+    "test/sixarm_ruby_fab_test/mime_test.rb",
+    "test/sixarm_ruby_fab_test/names_test.rb",
+    "test/sixarm_ruby_fab_test/password_test.rb",
+    "test/sixarm_ruby_fab_test/phone_test.rb",
+    "test/sixarm_ruby_fab_test/postal_test.rb",
+    "test/sixarm_ruby_fab_test/text_test.rb",
+    "test/sixarm_ruby_fab_test/time_test.rb",
+    "test/sixarm_ruby_fab_test/twitter_test.rb",
+    "test/sixarm_ruby_fab_test/username_test.rb",
+    "test/sixarm_ruby_fab_test/uuid_test.rb",
+    "test/sixarm_ruby_fab_test/forgery/geo_test.rb",
+    "test/sixarm_ruby_fab_test/forgery/uri_test.rb",
+  ]
 
-  s.add_dependency('forgery')
+  s.add_dependency('forgery', '>= 0.60', '< 999')
 
 end
