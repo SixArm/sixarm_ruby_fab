@@ -1,4 +1,4 @@
-SixArm.com → Ruby → <br> Fab gem for fabricated sample data for testing
+# SixArm.com → Ruby → <br> Fab gem for fabricated sample data for testing
 
 * Doc: <http://sixarm.com/sixarm_ruby_fab/doc>
 * Gem: <http://rubygems.org/gems/sixarm_ruby_fab>
