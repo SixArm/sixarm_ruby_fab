@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.name           = "sixarm_ruby_fab"
   s.summary        = "SixArm.com → Ruby → Fab gem to fabricate sample data for testing"
   s.description    = "Generate sample names, places, agents, tweets, etc."
-  s.version        = "1.0.4"
+  s.version        = "1.0.3"
 
   s.author         = "SixArm"
   s.email          = "sixarm@sixarm.com"
@@ -74,10 +74,10 @@ Gem::Specification.new do |s|
     "test/sixarm_ruby_fab_test/forgery/uri_test.rb",
   ]
 
-  s.add_dependency('forgery', '>= 0.6.0', '< 1')
+  s.add_dependency('forgery', '>= 0.60', '< 999')
 
   s.add_development_dependency('minitest', '>= 5.7.0', '< 6')
-  s.add_development_dependency('sixarm_ruby_minitest_extensions', '>= 1.0.8', '< 2')
+  s.add_development_dependency('sixarm_ruby_minitest_extensions', '= 1.0.5')
   s.add_development_dependency('rake', '> 10.4.2', '< 11')
   s.add_development_dependency('simplecov', '>= 0.10.0', '< 2')
   s.add_development_dependency('coveralls', '>= 0.8.2', '< 2')
