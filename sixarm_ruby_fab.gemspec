@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.name           = "sixarm_ruby_fab"
   s.summary        = "SixArm.com → Ruby → Fab gem to fabricate sample data for testing"
   s.description    = "Generate sample names, places, agents, tweets, etc."
-  s.version        = "1.0.4"
+  s.version        = "1.1.0"
 
   s.author         = "SixArm"
   s.email          = "sixarm@sixarm.com"
@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
 
   s.platform       = Gem::Platform::RUBY
   s.require_path   = "lib"
-  s.has_rdoc       = true
+
 
   s.files = [
     "Rakefile",
