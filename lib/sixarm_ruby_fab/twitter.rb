@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 class Fab
 
   # Fab a Twitter screen name.
@@ -7,7 +9,7 @@ class Fab
   #
   #   * none
   #
-  # @return [Fixnum] a screen name
+  # @return [Integer] a screen name
   #
   def twitter_screen_name(options = {})
     username(options)
@@ -20,7 +22,7 @@ class Fab
   #   * min
   #   * max
   #
-  # @return [Fixnum] a user id
+  # @return [Integer] a user id
   #
   def twitter_user_id(options = {})
     rand((options[:min] || 10000000)..(options[:max] || 100000000))
@@ -49,7 +51,7 @@ class Fab
   #   * min: 0
   #   * max: 999
   #
-  # @return [Fixnum] a retweet count
+  # @return [Integer] a retweet count
   #
   def twitter_retweet_count(options = {})
     rand((options[:min] || 0)..(options[:max] || 999))
@@ -62,7 +64,7 @@ class Fab
   #   * min: 0
   #   * max: 999
   #
-  # @return [Fixnum] a favorite count
+  # @return [Integer] a favorite count
   #
   def twitter_favorite_count(options = {})
     rand((options[:min] || 0)..(options[:max] || 999))
@@ -75,7 +77,7 @@ class Fab
   #   * min: 1000000000
   #   * max: 9000000000
   #
-  # @return [Fixnum] a tweet id
+  # @return [Integer] a tweet id
   #
   def twitter_tweet_id(options = {})
     rand((options[:min] || 1000000000)..(options[:max] || 9000000000))

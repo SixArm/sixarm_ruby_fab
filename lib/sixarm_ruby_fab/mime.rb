@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 class Fab
 
   # Fab a random content type part e.g. "image/jpeg".

@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 class Fab
 
   CHARS = ('a'..'z').to_a
@@ -26,9 +28,9 @@ class Fab
   # @returns [String] a base name
   #
   def basename(options = {})
-    intention = basename_intension(options[:intension_length] ? options.merge(length: intension_length) : options)
-    extention = basename_extension(options[:extension_length] ? options.merge(length: extension_length) : options)
-    "#{basename_intension}.#{basename_extension}"
+    intension = basename_intension(options[:intension_length] ? options.merge(length: intension_length) : options)
+    extension = basename_extension(options[:extension_length] ? options.merge(length: extension_length) : options)
+    "#{intension}.#{extension}"
   end
 
   # Fab a file base name intension e.g. "myfile"

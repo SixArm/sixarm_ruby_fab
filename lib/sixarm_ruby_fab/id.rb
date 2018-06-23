@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 class Fab
 
   # Fab a random id.
@@ -7,7 +9,7 @@ class Fab
   #   * min: 1
   #   * max: 30000
   #
-  # @returns [Fixnum] a random id
+  # @returns [Integer] a random id
   #
   def id(options = {})
     rand((options[:min] || 1)..(options[:max] || 30000))
@@ -19,7 +21,7 @@ class Fab
   #
   #   * size: 3
   #
-  # @returns [Array[Fixnum]] a list of random ids
+  # @returns [Array[Integer]] a list of random ids
   #
   def ids(options = {})
     (options[:size] || 3).times.map{ id(options) }

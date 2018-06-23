@@ -1,8 +1,17 @@
 # SixArm.com → Ruby → <br> Fab gem for fabricated sample data for testing
 
+<!--header-open-->
+
+[![Gem Version](https://badge.fury.io/rb/sixarm_ruby_fab.svg)](http://badge.fury.io/rb/sixarm_ruby_fab)
+[![Build Status](https://travis-ci.org/SixArm/sixarm_ruby_fab.png)](https://travis-ci.org/SixArm/sixarm_ruby_fab)
+[![Code Climate](https://api.codeclimate.com/v1/badges/0e443b17ddbe4045ceb9/maintanability)](https://codeclimate.com/github/SixArm/sixarm_ruby_fab/maintainability)
+
+* Git: <https://github.com/SixArm/sixarm_ruby_fab>
 * Doc: <http://sixarm.com/sixarm_ruby_fab/doc>
-* Gem: <http://rubygems.org/gems/sixarm_ruby_fab>
-* Repo: <http://github.com/sixarm/sixarm_ruby_fab>
+* Gem: <https://rubygems.org/gems/sixarm_ruby_fab>
+* Contact: Joel Parker Henderson, <joel@sixarm.com>
+* Project: [changes](CHANGES.md), [license](LICENSE.md), [contributing](CONTRIBUTING.md).
+
 <!--header-shut-->
 
 ## Introduction
@@ -16,17 +25,19 @@ For docs go to <http://sixarm.com/sixarm_ruby_fab/doc>
 Want to help? We're happy to get pull requests.
 
 
-<!--install-opent-->
+<!--install-open-->
 
 ## Install
 
 ### Gem
 
-Run this command in your shell or terminal:
+To install this gem in your shell or terminal:
 
     gem install sixarm_ruby_fab
 
-Or add this to your Gemfile:
+### Gemfile
+
+To add this gem to your Gemfile:
 
     gem 'sixarm_ruby_fab'
 

@@ -1,5 +1,7 @@
 # Changes
 
+* 2018-06-22 2.0.0 Update to Ruby 2.5, testing gems, etc.
+* 2018-04-02 1.1.0 Add #sym
 * 2017-11-28 1.0.4 Fix forgery version
 * 2017-08-13 1.0.3 Update to Ruby 2.4, spdx licenses, rake test, etc.
 * 2015-07-07 1.0.2 Update gemspec to use file manifest

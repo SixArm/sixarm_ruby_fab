@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
-require "minitest/autorun"
-require "simplecov"
-SimpleCov.start
+require "sixarm_ruby_fab_test"
 
 describe Fab do
 
@@ -14,7 +12,7 @@ describe Fab do
     end
 
     it "is an integer" do
-      @x.must_be_kind_of Fixnum
+      @x.must_be_kind_of Integer
     end
 
   end
@@ -26,7 +24,7 @@ describe Fab do
     end
 
     it "is a list of integer items" do
-      @x.each{|x| x.must_be_kind_of Fixnum}
+      @x.each{|x| x.must_be_kind_of Integer}
     end
 
   end

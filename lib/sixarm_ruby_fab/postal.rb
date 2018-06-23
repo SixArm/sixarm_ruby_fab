@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 class Fab
 
   # Fab a random street address.
@@ -19,7 +21,7 @@ class Fab
   end
 
   # Fab a random US state abbreviation.
-  # Delegates to  Forgery::Address.state_abbrev.
+  # Delegates to Forgery::Address.state_abbrev.
   #
   # @returns [String] a random US state abbreviation
   #
@@ -28,7 +30,7 @@ class Fab
   end
 
   # Fab a random US zip code.
-  # Delegates to  Forgery::Address.zip.
+  # Delegates to Forgery::Address.zip.
   #
   # @returns [String] a random US zip code
   #

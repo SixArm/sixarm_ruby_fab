@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 class Fab
 
   NAME_CHARS = "aabcdeeefghiijklmnoopqrrssttuuvwxyz".split(//)

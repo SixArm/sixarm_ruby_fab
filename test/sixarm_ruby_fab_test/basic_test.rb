@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
-require "minitest/autorun"
-require "simplecov"
-SimpleCov.start
+require "sixarm_ruby_fab_test"
 
 describe Fab do
 
@@ -19,6 +17,20 @@ describe Fab do
 
   end
 
+
+  describe "#sym" do      
+
+    before do
+      @x = fab.sym
+    end
+
+    it "is a symbol" do
+      @x.must_be_kind_of Symbol
+    end
+
+  end
+
+
   describe "#rating" do
 
     before do
@@ -26,7 +38,7 @@ describe Fab do
     end
 
     it "is a number" do
-      @x.must_be_kind_of Fixnum
+      @x.must_be_kind_of Integer
     end
 
   end

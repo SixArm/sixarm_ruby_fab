@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 class Fab
 
   LANGUAGE_CODE_ISO6391_LIST = [
