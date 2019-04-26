@@ -9,14 +9,16 @@ class Fab
     "Mozilla/5.0 (Linux; U; Android 4.0.3; en-us; EVO Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
   ]
 
-  attr_accessor :agent_list
-
   def agent
     agent_list.sample
   end
 
   def agent_list
     @agent_list ||= AGENT_LIST
+  end
+
+  def agent_list=x
+    @agent_list=x
   end
 
 end

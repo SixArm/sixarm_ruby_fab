@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.name           = "sixarm_ruby_fab"
   s.summary        = "SixArm.com → Ruby → Fab gem to fabricate sample data for testing"
   s.description    = "Generate sample names, places, agents, tweets, etc."
-  s.version        = "2.0.0"
+  s.version        = "2.0.1"
 
   s.author         = "SixArm"
   s.email          = "sixarm@sixarm.com"

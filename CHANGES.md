@@ -1,5 +1,6 @@
 # Changes
 
+* 2019-01-27 2.0.1 Fix warning for method redefined
 * 2018-06-22 2.0.0 Update to Ruby 2.5, testing gems, etc.
 * 2018-04-02 1.1.0 Add #sym
 * 2017-11-28 1.0.4 Fix forgery version

@@ -9,8 +9,6 @@ class Fab
     'ja',  # Japanese
   ]
 
-  attr_accessor :language_code_iso6391_list
-
   # Fab a language code e.g. "en" for English.
   # Delegates to #language_code_iso6391
   #
@@ -31,6 +29,10 @@ class Fab
 
   def language_code_iso6391_list
     @language_code_iso6391_list ||= LANGUAGE_CODE_ISO6391_LIST
+  end
+
+  def language_code_iso6391_list=x
+    @language_code_iso6391_list=x
   end
 
 end
