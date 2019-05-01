@@ -31,7 +31,7 @@ class Fab
     (options[:chars] || NOTE_CHARS).sample(options[:size] || rand(1..200)).join.strip
   end
 
-  # Fab a random note.
+  # Fab a random description.
   #
   # Options:
   #
