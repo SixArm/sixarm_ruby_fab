@@ -31,6 +31,7 @@ end
   "postal",
   "text",
   "time",
+  "timezone",
   "twitter",
   "username",
   "uuid"
