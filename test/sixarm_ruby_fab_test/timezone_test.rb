@@ -7,8 +7,8 @@ describe Fab do
 
   describe "#timezone_database_name" do    
 
-    it "is a valid name, which is formatted e.g. America/New_York" do
-      fab.timezone_database_name.must_match(/^[A-Z]\w+\/[A-Z]\w+$/)
+    it "is a valid name, which is formatted e.g. America/New_York or America/Indiana/Knox" do
+      fab.timezone_database_name.must_match(/^[A-Z]\w+(\/[A-Z]\w+)+$/)
     end
 
   end

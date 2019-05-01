@@ -1,5 +1,6 @@
 # Changes
 
+* 2019-04-30 2.2.3 Fix test for timezone database names
 * 2019-04-30 2.2.1 Add Ruby version 2.3...2.5.
 * 2019-04-30 2.2.0 Add #title
 * 2019-04-30 2.1.0 Add #timezone_database_name
