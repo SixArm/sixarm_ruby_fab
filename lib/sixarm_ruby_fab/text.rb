@@ -31,6 +31,19 @@ class Fab
     (options[:chars] || NOTE_CHARS).sample(options[:size] || rand(1..200)).join.strip
   end
 
+  # Fab a random title.
+  #
+  # Options:
+  #
+  #  * chars: NOTE_CHARS
+  #  * size: rand(10..50) [actual size may be less because we strip the string]
+  #
+  # @returns [String] a random name
+  #
+  def title(options = {})
+    (options[:chars] || NOTE_CHARS).sample(options[:size] || rand(10..50)).join.strip
+  end
+
   # Fab a random description.
   #
   # Options:

@@ -29,6 +29,18 @@ describe Fab do
 
   end
 
+  describe "#title" do      
+
+    before do
+      @x = fab.title
+    end
+
+    it "is a string" do
+      @x.must_be_kind_of String
+    end
+
+  end
+
   describe "#description" do      
 
     before do

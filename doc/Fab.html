@@ -683,7 +683,7 @@
 
   
     <span class="summary_desc"><div class='inline'>
-<p>Fab a random note.</p>
+<p>Fab a random description.</p>
 </div></span>
   
 </li>
@@ -1855,6 +1855,30 @@
 
   
     <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#title-instance_method" title="#title (instance method)">#<strong>title</strong>(options = {})  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Fab a random title.</p>
+</div></span>
   
 </li>
 
@@ -3091,7 +3115,7 @@
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>Fab a random note.</p>
+<p>Fab a random description.</p>
 
 <p>Options:</p>
 
@@ -3111,12 +3135,12 @@
       <pre class="lines">
 
 
-43
-44
-45</pre>
+56
+57
+58</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_fab/text.rb', line 43</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_fab/text.rb', line 56</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_description'>description</span><span class='lparen'>(</span><span class='id identifier rubyid_options'>options</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='lparen'>(</span><span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='symbol'>:chars</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='const'><span class='object_link'><a href="#NOTE_CHARS-constant" title="Fab::NOTE_CHARS (constant)">NOTE_CHARS</a></span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_sample'>sample</span><span class='lparen'>(</span><span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='symbol'>:size</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='id identifier rubyid_rand'>rand</span><span class='lparen'>(</span><span class='int'>20</span><span class='op'>..</span><span class='int'>200</span><span class='rparen'>)</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_join'>join</span><span class='period'>.</span><span class='id identifier rubyid_strip'>strip</span>
@@ -4154,12 +4178,12 @@
       <pre class="lines">
 
 
-56
-57
-58</pre>
+69
+70
+71</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_fab/text.rb', line 56</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_fab/text.rb', line 69</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_lorem'>lorem</span><span class='lparen'>(</span><span class='id identifier rubyid_options'>options</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='lparen'>(</span><span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='symbol'>:chars</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='const'><span class='object_link'><a href="#NOTE_CHARS-constant" title="Fab::NOTE_CHARS (constant)">NOTE_CHARS</a></span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_sample'>sample</span><span class='lparen'>(</span><span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='symbol'>:size</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='id identifier rubyid_rand'>rand</span><span class='lparen'>(</span><span class='int'>20</span><span class='op'>..</span><span class='int'>200</span><span class='rparen'>)</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_join'>join</span><span class='period'>.</span><span class='id identifier rubyid_strip'>strip</span>
@@ -5898,6 +5922,53 @@
 </div>
     
       <div class="method_details ">
+  <h3 class="signature " id="title-instance_method">
+  
+    #<strong>title</strong>(options = {})  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Fab a random title.</p>
+
+<p>Options:</p>
+
+<pre class="code ruby"><code class="ruby">* chars: NOTE_CHARS
+* size: rand(10..50) [actual size may be less because we strip the string]
+</code></pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+43
+44
+45</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_fab/text.rb', line 43</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_title'>title</span><span class='lparen'>(</span><span class='id identifier rubyid_options'>options</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='lparen'>(</span><span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='symbol'>:chars</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='const'><span class='object_link'><a href="#NOTE_CHARS-constant" title="Fab::NOTE_CHARS (constant)">NOTE_CHARS</a></span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_sample'>sample</span><span class='lparen'>(</span><span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='symbol'>:size</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='id identifier rubyid_rand'>rand</span><span class='lparen'>(</span><span class='int'>10</span><span class='op'>..</span><span class='int'>50</span><span class='rparen'>)</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_join'>join</span><span class='period'>.</span><span class='id identifier rubyid_strip'>strip</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
   <h3 class="signature " id="twitter_favorite_count-instance_method">
   
     #<strong>twitter_favorite_count</strong>(options = {})  &#x21d2; <tt>Integer</tt> 
@@ -6670,7 +6741,7 @@
 </div>
 
       <div id="footer">
-  Generated on Tue Apr 30 20:46:12 2019 by
+  Generated on Tue Apr 30 20:56:19 2019 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.19 (ruby-2.6.3).
 </div>
