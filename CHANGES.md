@@ -1,7 +1,8 @@
 # Changes
 
+* 2019-04-30 2.2.1 Add Ruby version 2.3...2.5.
 * 2019-04-30 2.2.0 Add #title
-* 2019-04-29 2.1.0 Add #timezone_database_name
+* 2019-04-30 2.1.0 Add #timezone_database_name
 * 2019-01-27 2.0.1 Fix warning for method redefined
 * 2018-06-22 2.0.0 Update to Ruby 2.5, testing gems, etc.
 * 2018-04-02 1.1.0 Add #sym

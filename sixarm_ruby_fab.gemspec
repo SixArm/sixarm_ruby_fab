@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.name           = "sixarm_ruby_fab"
   s.summary        = "SixArm.com → Ruby → Fab gem to fabricate sample data for testing"
   s.description    = "Generate sample names, places, agents, tweets, etc."
-  s.version        = "2.2.0"
+  s.version        = "2.2.1"
 
   s.author         = "SixArm"
   s.email          = "sixarm@sixarm.com"
@@ -86,6 +86,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency("rubycritic", ">= 3.3.0", "< 4")
   s.add_development_dependency("rubocop", ">= 0.52.1", "< 1")
 
-  s.required_ruby_version = ">= 2.5"
+  s.required_ruby_version = ">= 2.3"
 
 end
